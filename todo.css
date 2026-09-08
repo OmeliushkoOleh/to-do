@@ -43,12 +43,17 @@
     align-items: flex-start;
 }
 .priority-label{
-    border: solid 1px rgb(0, 0, 0);
+    background-color: rgb(226, 246, 255);
     border-radius: 3px;
+    border: solid 1px rgb(226, 246, 255);
+
 }
 .priority-label:hover{
-background-color: rgb(228, 230, 240);
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgb(177, 190, 255);
+
 }
+
 .deadline{
     width: 100%;
     display: flex;
