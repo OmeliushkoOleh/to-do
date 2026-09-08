@@ -1,0 +1,77 @@
+/*
+* {
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    user-select: none;         
+}
+*/
+.main{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.top{
+    width: 900px;
+    display: flex;
+    justify-content: center; 
+}
+.main-body{
+    width: 900px;
+    display: flex;
+    align-items: flex-start;
+}
+.main-body-container{
+    margin-top: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: rgb(226, 246, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.priority-label{
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 3px;
+}
+.priority-label:hover{
+background-color: rgb(228, 230, 240);
+}
+.deadline{
+    width: 100%;
+    display: flex;
+}
+.deadline button{
+    margin-left: 50px;
+}
+.card div{
+    margin-bottom: 5px;
+}
+.task{
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: rgb(226, 246, 255);
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.test{
+    background-color: rgb(255, 175, 175);
+
+}

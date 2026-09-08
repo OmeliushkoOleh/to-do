@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="top">
+            <div class="card">
+                <div class="name">
+                    <label>Name: <input id="Name" value="default" type="text"></label>
+                </div>
+                <div class="priority">
+                    <div>Priority:
+                        <label class="priority-label"><input id="Low" name="priority" type="radio" checked>Low</label>
+                        <label class="priority-label"><input id="Medium"  name="priority"  type="radio">Medium</label>
+                        <label class="priority-label"><input id="High"  name="priority"  type="radio">High</label>
+                    </div>
+                </div>
+                <div class="deadline">
+                    <label>Date:<input value="2026-09-08" id="Date" type="date"></label>
+                    <button onclick="saveToDo()">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+
+        <div class="main-body-container" id="New">New</div>
+        <div class="main-body-container" id="InProgress">In Progress</div>
+        <div class="main-body-container" id="Finished">Finished</div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="todo.js" defer></script>
+</body>
+</html>
