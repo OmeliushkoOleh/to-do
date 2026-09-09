@@ -107,19 +107,3 @@
 display: flex;
 justify-content: center;
 }
-.task:has(.mark-new:hover){
-    box-shadow:-8px 5px 5px black;
-    transition: box-shadow 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-.task:has(.mark-in-progress:hover){
-    box-shadow:-2px 8px 5px black;
-    transition: box-shadow 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-.task:has(.mark-finished:hover){
-    box-shadow: 2px 8px 5px black;
-    transition: box-shadow 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-.task:has(.delete-task:hover){
-    box-shadow:8px 5px 5px black;
-    transition: box-shadow 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
