@@ -45,7 +45,7 @@ const reDrawToDoList = () => {
                 newTask.style.backgroundColor = "rgba(255, 242, 0, 0.30)";
             }
                         newTask.innerHTML = `
-                <div class="task-name"><h2>${e.name}</h2></div>
+                <div class="task-name"><div>${e.name}</div></div>
                 <div class="task-deadline"> Deadline:  ${e.date}</div>
                 <p>
                     <button class="mark-new" onclick="handleButton(this.closest('.task').id, 'New')" >New</button>

@@ -42,6 +42,9 @@
     flex-direction: column;
     align-items: flex-start;
 }
+.card:hover, .task:hover{
+filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+}
 .priority-label{
     background-color: rgb(226, 246, 255);
     border-radius: 3px;
@@ -65,12 +68,15 @@
     margin-bottom: 5px;
 }
 .task{
+    width: 280px;
+    height: 130px;
+    overflow: auto;
+    scrollbar-width: thin;
     padding: 5px;
     margin: 5px;
     border: solid 1px black;
     border-radius: 10px;
     background-color: rgb(226, 246, 255);
-    width: 280px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -96,4 +102,8 @@
 .info div{
     display: flex;
     align-items: center;
+}
+.task-name{
+display: flex;
+justify-content: center;
 }
