@@ -50,7 +50,7 @@ const reDrawToDoList = () => {
                 <p>
                     <button class="mark-new" onclick="handleButton(this.closest('.task').id, 'New')" >New</button>
                     <button class="mark-in-progress" onclick="handleButton(this.closest('.task').id, 'InProgress')">In Progress</button>
-                    <button class="mark-done" onclick="handleButton(this.closest('.task').id, 'Finished')">Finished</button>
+                    <button class="mark-finished" onclick="handleButton(this.closest('.task').id, 'Finished')">Finished</button>
                     <button class="delete-task" onclick="deleteTask(this.closest('.task').id)">Delete</button>
                 </p>
                 `

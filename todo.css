@@ -43,7 +43,7 @@
     align-items: flex-start;
 }
 .card:hover, .task:hover{
-filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+    box-shadow: 1px 1px 3px rgb(83, 85, 86);
 }
 .priority-label{
     background-color: rgb(226, 246, 255);
@@ -106,4 +106,20 @@ filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
 .task-name{
 display: flex;
 justify-content: center;
+}
+.task:has(.mark-new:hover){
+    box-shadow:-8px 5px 5px black;
+    transition: box-shadow 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.task:has(.mark-in-progress:hover){
+    box-shadow:-2px 8px 5px black;
+    transition: box-shadow 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.task:has(.mark-finished:hover){
+    box-shadow: 2px 8px 5px black;
+    transition: box-shadow 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.task:has(.delete-task:hover){
+    box-shadow:8px 5px 5px black;
+    transition: box-shadow 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
