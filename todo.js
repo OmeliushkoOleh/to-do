@@ -1,9 +1,13 @@
 let arrOfToDo = [];
 
 const saveToDo = () => {
+
+
     const nameInput = document.getElementById("Name");
     const dateInput = document.getElementById("Date");
     const selectedPriority = document.querySelector('input[name="priority"]:checked')?.id || "Low";
+
+
 
     const task = {
         name: nameInput.value.trim(),
@@ -13,9 +17,11 @@ const saveToDo = () => {
         id: Date.now()
     };
     if (!task.name || !task.date) {
-        alert("Введите название и дату");
+        alert("Please fill all fields.");
         return;
     }
+        document.getElementById("Name").value = "";
+        document.getElementById("Date").value = "";
 
     arrOfToDo.push(task);
     reDrawToDoList();
@@ -80,7 +86,8 @@ const handleButton = (id, newProgress) => {
 }    
 
 const deleteTask = (taskId) => {
-    console.log(taskId);
-    arrOfToDo = arrOfToDo.filter(task => task.id != taskId);
-    reDrawToDoList();
+    if (confirm("Are you sure you want to delete the task??")) {
+        arrOfToDo = arrOfToDo.filter(task => task.id != taskId);
+        reDrawToDoList();
+    }
 }
